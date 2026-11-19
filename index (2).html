@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "微软雅黑";
+    line-height: 60px;
+}
+body{
+    background-image: url(./nybanner001.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.yijihezi{
+    width: 120px;
+    margin: 54px 0 0 100px;
+}
+
+.yijiliebiao{
+    width: 120px;
+}
+
+.yijiliebiao>li{
+    float: none;
+    width: 120px;
+    height: 60px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.yijiliebiao>li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #fff;
+}
+
+/* 一级 hover 瞬间变绿，无动画 */
+.yijiliebiao>li:hover a{
+    background-color: #2e9b57;
+}
+
+/* 二级菜单：去掉边框，白色填充 */
+.erjihezi{
+    position: absolute;
+    top: 0;
+    left: 120px;
+    width: 120px;
+    height: 0;
+    overflow: hidden;
+    transition: all 300ms linear;
+    background-color: #fff;
+}
+
+.yijiliebiao>li:hover .erjihezi{
+    height: 180px;
+}
+
+.erjihezi a{
+    color: #000;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    background-color: #fff;
+}
+
+/* 去掉二级横线 */
+.erjiliebiao li{
+    width: 120px;
+    height: 60px;
+}
+</style>
+</head>
+<body>
+
+<div class="yijihezi">
+    <ul class="yijiliebiao">
+        <li>
+            <a href="#">短毛猫</a>
+            <div class="erjihezi">
+                <ul class="erjiliebiao">
+                    <li><a href="#">英短</a></li>
+                    <li><a href="#">美短</a></li>
+                    <li><a href="#">暹罗</a></li>
+                </ul>
+            </div>
+        </li>
+
+        <li>
+            <a href="#">长毛猫</a>
+            <div class="erjihezi">
+                <ul class="erjiliebiao">
+                    <li><a href="#">布偶</a></li>
+                    <li><a href="#">金吉拉</a></li>
+                    <li><a href="#">波斯猫</a></li>
+                </ul>
+            </div>
+        </li>
+
+        <li>
+            <a href="#">无毛猫</a>
+            <div class="erjihezi">
+                <ul class="erjiliebiao">
+                    <li><a href="#">斯芬克斯</a></li>
+                    <li><a href="#">德文</a></li>
+                    <li><a href="#">彼得秃猫</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
